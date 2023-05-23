@@ -17,14 +17,14 @@ function App() {
             <Link to="/continent/:code/countries">countries</Link>
           </li>
           <li>
-            <Link to="/detail">detail</Link>
+            <Link to="/country/:code">detail</Link>
           </li>
         </ul>
       </nav>
       <Routes>
         <Route path="/continents" element={<Continents />} />
         <Route path="/continent/:code/countries" element={<Countries />} />
-        <Route path="/detail" element={<CountryDetail />} />
+        <Route path="/country/:code" element={<CountryDetail />} />
       </Routes>
     </>
   );
