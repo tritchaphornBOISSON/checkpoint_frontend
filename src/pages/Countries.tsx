@@ -23,7 +23,6 @@ const Countries = () => {
     variables: { code },
   });
 
-  console.log(data?.continent.countries);
   return (
     <>
       <h1>Countries</h1>
