@@ -14,7 +14,7 @@ function App() {
             <Link to="/continents">continents</Link>
           </li>
           <li>
-            <Link to="/countries">countries</Link>
+            <Link to="/continent/:code/countries">countries</Link>
           </li>
           <li>
             <Link to="/detail">detail</Link>
@@ -23,7 +23,7 @@ function App() {
       </nav>
       <Routes>
         <Route path="/continents" element={<Continents />} />
-        <Route path="/countries" element={<Countries />} />
+        <Route path="/continent/:code/countries" element={<Countries />} />
         <Route path="/detail" element={<CountryDetail />} />
       </Routes>
     </>
